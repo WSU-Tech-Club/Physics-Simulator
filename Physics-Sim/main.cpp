@@ -4,7 +4,7 @@ using std::cout;
 
 int main()
 {
-	//SDL_Init(SDL_INIT_EVERYTHING);
-
+	cout << "Congrats, you successfuly pulled this from git!\n";
+	cout << "And I added to it to" << endl;
 	return 0;
 }
