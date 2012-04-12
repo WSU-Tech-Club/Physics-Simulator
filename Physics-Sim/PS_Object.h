@@ -19,6 +19,13 @@ private:
 	SDL_Surface *img;
 	int shape;
 	bool isStatic;
+
+	int x, y;
+
+	int xV, yV;
+
+	int elasticity;
+
 public:
 	PS_Object();
 	PS_Object(int nMass);
