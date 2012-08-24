@@ -1,19 +1,21 @@
-#include "PS_Viewer.h"
+#include "Viewer.h"
 
-PS_Viewer::PS_Viewer(int scr_x, int scr_y)
+using namespace PhysicsSim;
+
+Viewer::Viewer(int scr_x, int scr_y)
 {
 	screen_x = scr_x;
 	screen_y = scr_y;
 
 }
 
-PS_Viewer::PS_Viewer() 
+Viewer::Viewer() 
 {
 	screen_x = 800;
 	screen_y = 800;
 }
 
-bool PS_Viewer::Init()
+bool Viewer::Init()
 {
 	if(SDL_Init( SDL_INIT_EVERYTHING ) == -1)
 	{
@@ -35,7 +37,7 @@ bool PS_Viewer::Init()
 	return true;
 }
 
-int PS_Viewer::runSimulation()
+int Viewer::runSimulation()
 {
 	Init();
 
@@ -49,7 +51,7 @@ int PS_Viewer::runSimulation()
 	}
 }
 
-void PS_Viewer::DisplayWorld()
+void Viewer::DisplayWorld()
 {
 	//go about blitting all the objects to the screen
 

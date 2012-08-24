@@ -1,4 +1,4 @@
-The WSUtech Clubs Physics Simulator.
+The WSUtech Club's Physics Simulator.
 
 Coding Standard:
 [insert coding rules here]
