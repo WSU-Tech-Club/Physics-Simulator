@@ -23,6 +23,8 @@ public:
 	PS_Viewer();
 	PS_Viewer(int scr_x, int scr_y); //scr_x and scr_y are the width and height of the screen, respectively
 
+	bool Init();
+
 	int runSimulation();
 
 	void update();
