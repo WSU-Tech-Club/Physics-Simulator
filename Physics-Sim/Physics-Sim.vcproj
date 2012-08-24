@@ -165,6 +165,10 @@
 				RelativePath=".\main.cpp"
 				>
 			</File>
+			<File
+				RelativePath=".\PS_Viewer.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -172,15 +176,7 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\PS_box.h"
-				>
-			</File>
-			<File
-				RelativePath=".\PS_manager.h"
-				>
-			</File>
-			<File
-				RelativePath=".\PS_Object.h"
+				RelativePath=".\PS_Viewer.h"
 				>
 			</File>
 		</Filter>
