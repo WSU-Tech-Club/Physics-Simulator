@@ -19,6 +19,8 @@ private:
 	int screen_x;
 	int screen_y;
 
+	int RunState;
+
 public:
 	PS_Viewer();
 	PS_Viewer(int scr_x, int scr_y); //scr_x and scr_y are the width and height of the screen, respectively
@@ -27,5 +29,5 @@ public:
 
 	int runSimulation();
 
-	void update();
+	void DisplayWorld();
 };

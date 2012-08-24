@@ -30,5 +30,28 @@ bool PS_Viewer::Init()
 		return false;
 	}
 
+
+	RunState = 1;
 	return true;
+}
+
+int PS_Viewer::runSimulation()
+{
+	Init();
+
+	while(RunState > 0)
+	{
+		//simulate world
+		
+		//display scene
+
+		//cap fps
+	}
+}
+
+void PS_Viewer::DisplayWorld()
+{
+	//go about blitting all the objects to the screen
+
+	SDL_Flip(screen);
 }
