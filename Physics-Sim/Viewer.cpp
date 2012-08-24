@@ -43,9 +43,10 @@ int Viewer::runSimulation()
 
 	while(RunState > 0)
 	{
-		//simulate world
+		//update world
+		//environment->updateAllObjects(); or something to that effect
 		
-		//display scene
+		DisplayWorld();
 
 		//cap fps
 	}
