@@ -1,4 +1,4 @@
-#include "PS_Object.h"
+#include "SDL.h"
 #include <vector>
 
 using std::vector;
@@ -11,14 +11,17 @@ using std::vector;
 // date: 4-10-12
 //
 
-class PS_manager
+class PS_Viewer
 {
 private:
-	vector<PS_Object*> objects;
+	SDL_Surface *screen;
+
+	int screen_x;
+	int screen_y;
 
 public:
-	PS_manager();
-	PS_manager(int scr_x, int scr_y); //scr_x and scr_y are the width and height of the screen, respectively
+	PS_Viewer();
+	PS_Viewer(int scr_x, int scr_y); //scr_x and scr_y are the width and height of the screen, respectively
 
 	int runSimulation();
 
