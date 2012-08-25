@@ -6,13 +6,14 @@ Viewer::Viewer(int scr_x, int scr_y)
 {
 	screen_x = scr_x;
 	screen_y = scr_y;
-
+	RunState = -1;
 }
 
 Viewer::Viewer() 
 {
 	screen_x = 800;
 	screen_y = 800;
+	RunState = -1;
 }
 
 bool Viewer::Init()
@@ -39,7 +40,8 @@ bool Viewer::Init()
 
 int Viewer::runSimulation()
 {
-	Init();
+	if(RunState < 1)
+		Init();
 
 	while(RunState > 0)
 	{
@@ -50,6 +52,8 @@ int Viewer::runSimulation()
 
 		//cap fps
 	}
+
+	return 0;
 }
 
 void Viewer::DisplayWorld()

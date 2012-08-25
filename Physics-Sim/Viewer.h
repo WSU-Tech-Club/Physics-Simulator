@@ -9,7 +9,7 @@ using std::vector;
 //
 // author: Jeromy Johnson
 // date: 4-10-12
-//
+// revised: 8-24-12
 
 namespace PhysicsSim
 {
@@ -18,6 +18,8 @@ class Viewer
 {
 private:
 	SDL_Surface *screen;
+
+	//Some sort of world object needed here, something that manages all the objects to be simulated
 
 	int screen_x;
 	int screen_y;
