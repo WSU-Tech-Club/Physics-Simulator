@@ -1,5 +1,7 @@
 #include "Vector.h"
 
+using namespace PhysicsSim;
+
 PSVect::PSVect()
 {
 	x = 0.0;

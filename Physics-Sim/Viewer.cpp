@@ -62,3 +62,6 @@ void Viewer::DisplayWorld()
 
 	SDL_Flip(screen);
 }
+
+//Information on drawing shapes:
+//http://aaroncox.net/tutorials/2dtutorials/sdlshapes.html
