@@ -1,10 +1,8 @@
 #include "Viewer.h"
 
-using namespace PhysicsSim;
-
-int main(int argc, char** argv)
+int main(int argc, char *argv[])
 {
-	Viewer *v = new Viewer();
+	PhysicsSim::Viewer *v = new PhysicsSim::Viewer();
 	v->runSimulation();
 	return 0;
 }

@@ -13,16 +13,19 @@
 namespace PhysicsSim
 {
 
-class BaseObject
-{
-public:
+	class BaseObject
+	{
+	public:
+		BaseObject ();
 
-	PSVect *position;
-	PSVect *velocity;
-	PSVect *accel;
 
-	BaseObject ();
-};
+		PSVect *position;
+		PSVect *velocity;
+		PSVect *accel;
+
+		double mass;
+
+	};
 
 
 }
